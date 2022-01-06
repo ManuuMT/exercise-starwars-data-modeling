@@ -31,5 +31,4 @@ class Planet(Base):
     name = Column(String(30), nullable=False)
     user_id = Column(Integer,ForeignKey('users.id'))
 
-## Draw from SQLAlchemy base
 render_er(Base, 'diagram.png')
